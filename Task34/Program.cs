@@ -8,8 +8,8 @@ Console.WriteLine("Рандомный Массив: ");
 PrintArray(numbers);
 int count = 0;
 
-for (int z = 0; z < numbers.Length; z++)
-if (numbers[z] % 2 == 0)
+foreach (int v in numbers)
+if (v % 2 == 0)
 count++;
 
 Console.WriteLine($"Всего чисел {numbers.Length}, Четных {count}");
